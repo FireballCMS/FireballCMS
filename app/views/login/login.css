@@ -1,0 +1,53 @@
+.root {
+	-fx-pref-width: auto;
+	-fx-pref-height: auto;
+}
+
+.button-bar {
+	-fx-padding: 1em;
+}
+
+.avatar {
+	-fx-image: url("profile.jpg");
+	-fx-pref-height: 8em;
+	-fx-pref-width: 8em;
+	-fx-background-radius: 5em;
+	/*-fx-shape: "M340,400a60,60 0 1,0 120,0a60,60 0 1,0 -120,0";*/
+	/*http://complexdan.com/svg-circleellipse-to-path-converter/*/
+}
+
+.auth-field {
+	-fx-padding: 1em 0.5em;
+	-fx-pref-height: 3.5em;
+	-fx-pref-width: 20em;
+}
+
+#social {
+	-fx-graphic-text-gap: 0;
+	-fx-background-size: stretch;
+	-fx-pref-height: 2em;
+	-fx-pref-width: 10em;
+	-fx-background-position: 100%;
+}
+
+.google {
+	-fx-background-image: url("google_signin_dark_normal_web.png");
+}
+
+.google:disabled {
+	-fx-background-image: url("google_signin_dark_disabled_web.png");
+}
+
+.google:focused {
+	-fx-background-image: url("google_signin_dark_focus_web.png");
+}
+
+.google:pressed {
+	-fx-background-image: url("google_signin_dark_pressed_web.png");
+}
+
+.twitter {
+	-fx-background-image: url("sign-in-with-twitter-gray.png");
+}
+
+
