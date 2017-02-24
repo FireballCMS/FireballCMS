@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'Trench';
+	src: url('node/trench.otf');
+}
+
+.root {
+	-fx-padding: 1em;
+	-fx-background-color: #222222;
+}
+
+#media-button {
+	-fx-graphic-text-gap: 0;
+	-fx-border-insets: 0.1em 1em;
+}
+
+#media-controls {
+	-fx-background-color: transparent;
+	-fx-padding: 0.5em 1.1em;
+	-fx-spacing: 1.4em;
+}
+
+#seek-group {
+	-fx-spacing: 0;
+	-fx-padding: 0;
+}
+
+.node-name {
+	-fx-font-family: 'Trench';
+	-fx-font-size: 3.5em;
+	-fx-text-fill: white;
+}
+
+/*<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+
+/*<a href="https://icons8.com/web-app/15207/High-Volume">High volume icon credits</a>*/
+
+.play {
+	-fx-graphic: url("node/pause.png");
+}
+
+.pause {
+	-fx-graphic: url("node/pause.png");
+}
+
+.to-end {
+	-fx-graphic: url("node/to-end.png");
+}
+
+.to-start {
+	-fx-graphic: url("node/to-start.png");
+}
+
+.rewind {
+	-fx-graphic: url("node/rewind.png");
+}
+
+.fast-fwd {
+	-fx-graphic: url("node/fast-fwd.png");
+}
+
+.volume {
+	-fx-graphic: url("node/vol-mute.png");
+}
+
+.volume-slider .track {
+	-fx-background-color:
+		linear-gradient(#1F8FE8 48%, #0676CF 51%, #005CB5 100%);
+}
+
+.player {
+	-fx-border: solid;
+	-fx-padding: 1em;
+}
+
+.player-indicator {
+	-fx-background-color: transparent;
+	-fx-border-insets: 1em;
+}
+
+.player-indicator .track {
+	-fx-background-color: grey,
+		linear-gradient(from 0% 0% to 1.5% 80%, repeat, #E60000 10%, #1F8FE8 20%, #005CB5 60%);
+}
+
+.volume-slider .thumb, .player-indicator .thumb {
+	-fx-background-color:
+	    white,
+		linear-gradient(#FF3D00 48%, FF1A1A 51%, #E60000 100%);
+}
+
+.separator .line {
+	-fx-border-width: 0;
+}

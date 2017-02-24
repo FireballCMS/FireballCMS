@@ -8,7 +8,7 @@
 }
 
 .avatar {
-	-fx-image: url("profile.jpg");
+	-fx-image: url("login/profile.jpg");
 	-fx-pref-height: 8em;
 	-fx-pref-width: 8em;
 	-fx-background-radius: 5em;
@@ -31,23 +31,23 @@
 }
 
 .google {
-	-fx-background-image: url("google_signin_dark_normal_web.png");
+	-fx-background-image: url("login/google_signin_dark_normal_web.png");
 }
 
 .google:disabled {
-	-fx-background-image: url("google_signin_dark_disabled_web.png");
+	-fx-background-image: url("login/google_signin_dark_disabled_web.png");
 }
 
 .google:focused {
-	-fx-background-image: url("google_signin_dark_focus_web.png");
+	-fx-background-image: url("login/google_signin_dark_focus_web.png");
 }
 
 .google:pressed {
-	-fx-background-image: url("google_signin_dark_pressed_web.png");
+	-fx-background-image: url("login/google_signin_dark_pressed_web.png");
 }
 
 .twitter {
-	-fx-background-image: url("sign-in-with-twitter-gray.png");
+	-fx-background-image: url("login/sign-in-with-twitter-gray.png");
 }
 
 

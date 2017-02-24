@@ -1,8 +1,10 @@
 val playVersion = "2.5.12"
 val scalafxVersion = "8.0.92-R10"
 val silhouetteVersion = "4.0.0"
-val enzoVersion = "0.3.6"
 val controlsfxVersion = "8.40.12"
+val enzoVersion = "0.3.6"
+val medusaVersion = "7.6"
+val afterBurnerVersion = "1.7.0"
 
 name := "Fireball Central Management System"
 version := "1.0"
@@ -24,6 +26,8 @@ libraryDependencies ++= Seq(
     "org.scalafx" %% "scalafx" % scalafxVersion,
 
     "eu.hansolo.enzo" % "Enzo" % enzoVersion,
+    "com.airhacks" % "afterburner.fx" % afterBurnerVersion,
+    "eu.hansolo" % "Medusa" % medusaVersion,
     "org.controlsfx" % "controlsfx" % controlsfxVersion
 )
 

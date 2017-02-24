@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.enzo.charts.SimpleLineChart?>
+<?import eu.hansolo.medusa.Clock?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="mNodeName" styleClass="node-name" text="Node Name is very long">
+               <font>
+                  <Font name="Alegreya" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <MediaView fx:id="mMediaPlayer" cache="true" cacheHint="SPEED" fitHeight="480.0" fitWidth="640.0" styleClass="player">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </MediaView>
+            <Separator maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style=": 0;" valignment="TOP" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <SimpleLineChart maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER" />
+                  <Label style="-fx-text-fill: white;" text="Label" />
+                  <Label style="-fx-text-fill: white;" text="Label" />
+                  <Clock animated="true" autoNightMode="true" borderWidth="0.0" discreteHours="true" lcdDesign="BLUE_BLACK" lcdFont="DIGITAL" skinType="SLIM" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Slider fx:id="mVideoProgressIndicator" prefHeight="16.0" prefWidth="626.0" styleClass="player-indicator">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Slider>
+      <HBox id="media-controls" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+         <children>
+            <Label id="media-button" fx:id="mPlayButton" styleClass="play" />
+            <HBox id="seek-group" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="NEVER">
+               <children>
+                  <Label id="media-button" fx:id="mGoToStartButton" styleClass="to-start" />
+                  <Label id="media-button" fx:id="mRewindButton" styleClass="rewind" />
+               </children>
+            </HBox>
+            <HBox id="seek-group" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label id="media-button" fx:id="mFastForwardButton" styleClass="fast-fwd" />
+                  <Label id="media-button" fx:id="mGoToEndButton" styleClass="to-end" />
+               </children>
+            </HBox>
+            <Separator maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="NEVER">
+               <children>
+                  <Label id="media-button" fx:id="mVolumeButton" styleClass="volume" />
+                  <Separator maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="SOMETIMES" />
+                  <Slider fx:id="mVolumeIndicator" prefHeight="16.0" prefWidth="130.0" styleClass="volume-slider" HBox.hgrow="NEVER" />
+               </children>
+            </HBox>
+            <Label alignment="BOTTOM_RIGHT" styleClass="maximize-vid" />
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" VBox.vgrow="NEVER" />
+      <ListView fx:id="mNodesVideoPreviewList" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" orientation="HORIZONTAL" VBox.vgrow="SOMETIMES" />
+   </children>
+</VBox>
