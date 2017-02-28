@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Trench';
+    src: url('trench.otf');
+}
+
+.root {
+    -fx-base: #222222;
+    -fx-background-color: -fx-base;
+    -fx-accent: rgba(125, 125, 125, 0.77);
+    -fx-text-fill: white;
+    -fx-control-inner-background: derive(-fx-base, 80%);
+    -fx-padding: 2em;
+    -fx-spacing: .5em;
+}
+
+.node-name {
+    -fx-font-family: 'Trench';
+    -fx-font-size: 3.5em;
+    -fx-text-fill: white;
+}
+
+#media-control {
+    -fx-graphic-text-gap: 0;
+    -fx-border-insets: 0.1em 1em;
+    -fx-cursor: hand;
+}
+
+/* Only target the labels which are the controls like play, pause, rewind, etc*/
+#media-control.label {
+    -fx-scale-x: 75%;
+    -fx-scale-y: 75%;
+    -fx-blend-mode: difference;
+}
+
+#media-control.label:pressed {
+    -fx-effect: dropshadow(two-pass-box, rgb(255, 255, 255), 2, 1, 1, 1);
+}
+
+#media-controls {
+    -fx-padding: 0 1.1em;
+    -fx-spacing: 1em;
+}
+
+#media-control-group {
+    -fx-spacing: -1em;
+    -fx-padding: 0;
+}
+
+/*<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+
+/*<a href="https://icons8.com/web-app/15207/High-Volume">High volume icon credits</a>*/
+
+.play {
+    -fx-graphic: url("pause.png");
+}
+
+.pause {
+    -fx-graphic: url("pause.png");
+}
+
+.to-end {
+    -fx-graphic: url("to-end.png");
+}
+
+.to-start {
+    -fx-graphic: url("to-start.png");
+}
+
+.rewind {
+    -fx-graphic: url("rewind.png");
+}
+
+.fast-fwd {
+    -fx-graphic: url("fast-fwd.png");
+}
+
+.volume {
+    -fx-graphic: url("vol-mute.png");
+}
+
+.player {
+    -fx-effect: dropshadow(two-pass-box, #000000, 6, 30, 0, 0);
+    -fx-padding: 1em;
+}
+
+.player-indicator {
+    -fx-background-color: transparent;
+    -fx-border-insets: 0.5em;
+}
+
+.volume-slider .track, .player-indicator .track {
+    -fx-background-color: rgba(20, 20, 20, 0.21);
+    -fx-blend-mode: multiply;
+    -fx-background-radius: 0.3em;
+}
+
+.volume-slider .bar, .player-indicator .bar {
+    -fx-background-color: linear-gradient(#E60000 48%, FF1A1A 51%, #FF3D00 100%);
+    -fx-blend-mode: hard-light;
+}
+
+.volume-slider .track, .player-indicator .track,
+.volume-slider .bar, .player-indicator .bar {
+    /*-fx-background-color: grey,*/
+    /*linear-gradient(from 0% 0% to 1.5% 80%, repeat, #E60000 10%, #1F8FE8 20%, #005CB5 60%);*/
+    -fx-scale-y: -30%;
+}
+
+.player-indicator .slider .track, .volume-slider .slider .track {
+    -fx-background-color: transparent;
+}
+
+.volume-slider .thumb, .player-indicator .thumb {
+    -fx-background-color: white,
+    linear-gradient(#FF3D00 48%, FF1A1A 51%, #E60000 100%);
+}
+
+.separator .line {
+    -fx-border-width: 0;
+}

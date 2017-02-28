@@ -1,0 +1,6 @@
+[submodule "gui"]
+	path = gui
+	url = git@github.com:smac89/FireballCMSGUI.git
+[submodule "worldfx"]
+	path = worldfx
+	url = ./worldfx
