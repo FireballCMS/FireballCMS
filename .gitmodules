@@ -4,3 +4,6 @@
 [submodule "worldfx"]
 	path = worldfx
 	url = https://github.com/HanSolo/worldfx.git
+[submodule "jbootx"]
+	path = jbootx
+	url = https://github.com/dicolar/jbootx.git
