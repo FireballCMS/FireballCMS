@@ -1,0 +1,4 @@
+rootProject.name = 'FireballCMS'
+include 'gui'
+include 'logging'
+include  'DataFX'

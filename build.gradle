@@ -1,0 +1,10 @@
+group 'com.ncc490.cmpt405'
+version '0.1.0-SNAPSHOT'
+
+subprojects {
+    group = 'com.ncc490.cmpt405'
+
+    task showInfo {
+        println "I'm $project.name, located in \"${project.getProjectDir()}\""
+    }
+}

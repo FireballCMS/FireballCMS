@@ -5,5 +5,5 @@
 	path = jbootx
 	url = https://github.com/dicolar/jbootx.git
 [submodule "DataFX/DataFX"]
-	path = DataFX/DataFX
+	path = DataFX
 	url = git@github.com:FireballCMS/DataFX.git
